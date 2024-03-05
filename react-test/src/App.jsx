@@ -10,7 +10,7 @@ function App() {
 
     <h1>React Router Demo</h1>
 
-    <BrowserRouter basename="/{frontend-courseproject-Maxime122004}">
+    <BrowserRouter basename="/">
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
