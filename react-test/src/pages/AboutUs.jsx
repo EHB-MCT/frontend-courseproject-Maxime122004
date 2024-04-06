@@ -1,33 +1,35 @@
 import { Link } from "react-router-dom";
 
-
 function AboutUs() {
     return (
         <main>
             <div>
                 <h1>Populair</h1>
                 <section className="sprookjes">
-                    <article>
-                        <img src="images/portaal_pagina/sprookjes_template_image.png" alt="sprookje" />
-                        <h2>Rapunzel</h2>
+                    <Link to='/HansGrietje'>
+                        <img src="images/portaal_pagina/sprookjes_template_image.png"/>
+                        <img src="images/portaal_pagina/hans_en_grietje_tumbnail.jpg" alt="sprookje" />
+                        <h2>Hans en Grietje</h2>
                         <p>Student</p>
-                        <p>Hasan Taha</p>
+                        <p>Maxime Bastien</p>
                         <img src="images/portaal_pagina/arrow.png" alt="arrow" />
-                    </article>
-                    <article>
-                        <img src="images/portaal_pagina/sprookjes_template_image.png" alt="sprookje" />
-                        <h2>Rapunzel</h2>
+                    </Link>
+                    <Link to='/HansGrietje'>
+                        <img src="images/portaal_pagina/sprookjes_template_image.png"/>
+                        <img src="images/portaal_pagina/hans_en_grietje_tumbnail.jpg" alt="sprookje" />
+                        <h2>Hans en Grietje</h2>
                         <p>Student</p>
-                        <p>Hasan Taha</p>
+                        <p>Maxime Bastien</p>
                         <img src="images/portaal_pagina/arrow.png" alt="arrow" />
-                    </article>
-                    <article>
-                        <img src="images/portaal_pagina/sprookjes_template_image.png" alt="sprookje" />
-                        <h2>Rapunzel</h2>
+                    </Link>
+                    <Link to='/HansGrietje'>
+                        <img src="images/portaal_pagina/sprookjes_template_image.png"/>
+                        <img src="images/portaal_pagina/hans_en_grietje_tumbnail.jpg" alt="sprookje" />
+                        <h2>Hans en Grietje</h2>
                         <p>Student</p>
-                        <p>Hasan Taha</p>
+                        <p>Maxime Bastien</p>
                         <img src="images/portaal_pagina/arrow.png" alt="arrow" />
-                    </article>
+                    </Link>
                 </section>
                 <Link to='/Sprookjes' className="loadMore">
                     <img src="images/portaal_pagina/arrow.png" alt="arrow" />
