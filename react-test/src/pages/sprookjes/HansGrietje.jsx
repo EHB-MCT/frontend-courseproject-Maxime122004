@@ -68,6 +68,23 @@ function HansGrietje() {
                         </div>
                         <img src="images/sprookje/hansel.png" alt="hans" />
                     </section>
+
+                    <div id="fire">
+                        <img src="images/sprookje/fire.png" alt="fire" />
+                        <div className="fix"></div>
+                    </div>
+
+                    <p>De weg naar huis, een pad van verlichting,<br />thuis aangekomen, geen stiefmoeder in hun bestaan.</p>
+
+                    <section id="end-horizontal-scroll">
+                        {/* <div> */}
+                            <h2>The End.</h2>
+                            <div>
+                                <p>Met vader verenigd, een gelukkig slot,<br /><span className="hans">Hans</span> en <span className="grietje">Grietje</span>, een sprookje dat blijft, zo zot.</p>
+                                <img src="images/sprookje/path_to_house_on_fire.png" />
+                            </div>
+                        {/* </div> */}
+                    </section>
                 </Parallax>
             </div >
         </>

@@ -338,7 +338,7 @@ section#makingOf article:nth-child(3) div {
 #hansGrietje {
     background-color: #2A2A2A;
     color: white;
-    height: 300vh;
+    height: 200vh;
 }
 
 #hansGrietje p {
@@ -364,7 +364,7 @@ section#makingOf article:nth-child(3) div {
 }
 
 #hansGrietje>div>div {
-    height: 10000px !important;
+    height: 8000px !important;
 }
 
 #hansGrietje nav {
@@ -560,4 +560,57 @@ section#makingOf article:nth-child(3) div {
     width: 8%;
     margin: auto;
     z-index: 1;
+}
+
+#fire {
+    margin-top: 200px;
+}
+
+#fire .fix {
+    background: linear-gradient(0deg, rgba(42, 42, 42, 1) 10%, rgba(255, 255, 255, 0) 50%);
+}
+
+#fire + p {
+    margin-top: 200px;
+}
+
+#hansGrietje h2 {
+    font-family: Oswald-Medium;
+    font-size: 120px;
+}
+
+#end-horizontal-scroll {
+    width: 100vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 200px 0 100px 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 400px;
+    margin-top: 400px;
+}
+
+#end-horizontal-scroll h2 {
+    justify-self: center;
+    align-self: center;
+    padding: 0 200px;
+}
+
+#end-horizontal-scroll img{
+    width: 200%;
+}
+
+#end-horizontal-scroll div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#end-horizontal-scroll div p, 
+#end-horizontal-scroll div img {
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
