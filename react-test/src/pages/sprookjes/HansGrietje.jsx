@@ -1,44 +1,81 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function HansGrietje() {
+    hideOverflow();
     return (
         <>
             <div id="hansGrietje">
-                <nav></nav>
-                <header>
-                    <Parallax pages={2} style={{ top: "0", left: "0" }}>
-                        <ParallaxLayer offset={0} speed={0.2}>
-                            <img src="images/sprookje/tree-layer1.png" className="animation-layer"/>
-                        </ParallaxLayer>
-                        <ParallaxLayer offset={0} speed={0.4}>
-                            <img src="images/sprookje/tree-layer2.png" className="animation-layer"/>
-                        </ParallaxLayer>
-                        <ParallaxLayer offset={0} speed={0.6}>
-                            <img src="images/sprookje/tree-layer3.png" className="animation-layer"/>
-                        </ParallaxLayer>
-                        <ParallaxLayer offset={0} speed={0.8}>
-                            <img src="images/sprookje/tree-layer4.png" className="animation-layer"/>
-                        </ParallaxLayer>
-                        <ParallaxLayer offset={0} speed={0.9}>
-                            <img src="images/sprookje/tree-layer5.png" className="animation-layer"/>
-                        </ParallaxLayer>
-                        <ParallaxLayer offset={0} speed={1}>
-                            <img src="images/sprookje/tree-layer6.png" className="animation-layer"/>
-                        </ParallaxLayer>
-                    </Parallax>
-                    {/* <h1>Hans & Grietje</h1> */}
-                </header>
+                <Parallax pages={2} style={{ top: "0", left: "0" }}>
+                    <nav></nav>
+                    <header>
+                        <img src="images/sprookje/moon.png" alt="moon" id="moon" />
+                        <h1>Hans & Grietje</h1>
+                        <div id="trees">
+                            <ParallaxLayer offset={0} speed={0.01}>
+                                <img src="images/sprookje/tree-layer1.png" className="animation-layer" />
+                            </ParallaxLayer>
+                            <ParallaxLayer offset={0} speed={0.02}>
+                                <img src="images/sprookje/tree-layer2.png" className="animation-layer" />
+                            </ParallaxLayer>
+                            <ParallaxLayer offset={0} speed={0.03}>
+                                <img src="images/sprookje/tree-layer3.png" className="animation-layer" />
+                            </ParallaxLayer>
+                            <ParallaxLayer offset={0} speed={0.04}>
+                                <img src="images/sprookje/tree-layer4.png" className="animation-layer" />
+                            </ParallaxLayer>
+                            <ParallaxLayer offset={0} speed={0.05}>
+                                <img src="images/sprookje/tree-layer5.png" className="animation-layer" />
+                            </ParallaxLayer>
+                            <ParallaxLayer offset={0} speed={0.06}>
+                                <img src="images/sprookje/tree-layer6.png" className="animation-layer" />
+                                <div className="fix"></div>
+                            </ParallaxLayer>
+                        </div>
+                        <img src="images/sprookje/pathheader.png" />
+                        <img src="images/sprookje/house_side.png" />
+                    </header>
 
-                <main>
+                    <section className="horizontal-scroll">
+                        <div>
+                            <p>In een dorp ver hier vandaan,<br /><span className="hans">Hans</span> en <span className="grietje">Grietje</span>, arm ontdaan.</p>
+                            <p>Ouders laten hen in &apos;t bos achter,<br /> met stenen en broodkruimels,<br />een zoektocht vol klater.</p>
+                            <img src="images/sprookje/path_to_house.png" />
+                        </div>
+                    </section>
 
-                </main>
+                    <p>Verdwaald in &apos;t bos, een snoephuis ontdekt,<br />
+                        maar de <span className="heks">heks</span> binnenin, kwaadaardig onbeperkt. </p>
 
-                <footer>
+                    <section id="house">
+                        <img src="images/sprookje/house.png" alt="peperkoekenhuisje" />
+                        <div className="fix"></div>
+                    </section>
 
-                </footer>
-            </div>
+                    <section id="door">
+                        <div>
+                            <img src="images/sprookje/door.png" alt="door" />
+                            <img src="images/sprookje/eyegap.png" alt="eyegap" />
+                            <img src="images/sprookje/eyes.png" alt="eyes" />
+                        </div>
+                        <div className="fix"></div>
+                    </section>
+
+                    <p>Slimme kinderen, ontsnappen aan haar greep,<br />voor dat <span className="heks">de boze heks</span>, hun opeet.</p>
+
+                    <section id="prison">
+                        <div>
+                            <img src="images/sprookje/prison.png" alt="prisonbars" />
+                        </div>
+                        <img src="images/sprookje/hansel.png" alt="hans" />
+                    </section>
+                </Parallax>
+            </div >
         </>
     );
+}
+
+function hideOverflow() {
+    document.querySelector('body').style.overflow = 'hidden';
 }
 
 export default HansGrietje;

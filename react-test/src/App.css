@@ -170,12 +170,12 @@ main div section.sprookjes a {
     grid-template-rows: 1fr;
 }
 
-main div section.sprookjes a img:nth-child(1){
+main div section.sprookjes a img:nth-child(1) {
     z-index: 100;
     opacity: 0.3;
 }
 
-main div section.sprookjes a img{
+main div section.sprookjes a img {
     border-radius: 20px;
 }
 
@@ -325,24 +325,239 @@ section#makingOf article:nth-child(3) div {
     src: url(./fonts/Oswald-Medium.ttf);
 }
 
-#hansGrietje{
+@font-face {
+    font-family: Poppins-ExtraLight;
+    src: url(./fonts/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+
+#hansGrietje {
     background-color: #2A2A2A;
     color: white;
     height: 300vh;
 }
-#hansGrietje nav{
-    height: 10vh;
-    background-color: #4F836B;
-    box-shadow: none;
-} 
 
-#hansGrietje h1 {
-    font-family: Oswald-Medium;
+#hansGrietje p {
+    font-family: Poppins-ExtraLight;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
 }
 
-.animation-layer {
+#hansGrietje p span.hans {
+    color: #CCB13E;
+    font-family: Poppins-Medium;
+}
+
+#hansGrietje p span.grietje {
+    color: #B59E3A;
+    font-family: Poppins-Medium;
+}
+
+#hansGrietje p span.heks {
+    color: #3B8A53;
+    font-family: Poppins-Medium;
+}
+
+#hansGrietje>div>div {
+    height: 10000px !important;
+}
+
+#hansGrietje nav {
+    height: 10vh;
+    background-color: white;
+    box-shadow: none;
+}
+
+#hansGrietje header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+}
+
+#hansGrietje header #moon {
+    grid-column: 5/6;
+    grid-row: 1/3;
+    width: 80%;
+    margin-top: 20px;
+}
+
+#hansGrietje header h1 {
+    font-family: Oswald-Medium;
+    text-align: center;
+    font-size: 150px;
+    grid-column: 2/5;
+    grid-row: 2/3;
+}
+
+#hansGrietje .animation-layer {
     background-position: bottom center;
     background-size: auto 1000px;
     width: 100%;
     height: 1000px;
+}
+
+#hansGrietje header div#trees {
+    grid-column: 1/6;
+    grid-row: 3/6;
+}
+
+#hansGrietje header div#trees div img {
+    margin-top: 175px;
+    filter: drop-shadow(#2e2e2e 2px 2px 10px);
+}
+
+#hansGrietje header div#trees div:nth-child(4) img {
+    margin-top: 150px;
+}
+
+#hansGrietje header div#trees div:nth-child(6) img {
+    margin-top: 125px;
+}
+
+#hansGrietje header img:nth-child(4) {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    justify-self: right;
+    margin-top: 100px;
+}
+
+#hansGrietje header img:nth-child(5) {
+    grid-column: 3/5;
+    grid-row: 3/5;
+    justify-self: left;
+    width: 40%;
+    margin-left: 310px;
+    opacity: 0.4;
+    z-index: -1;
+    position: relative;
+}
+
+#hansGrietje .fix {
+    background: rgb(42, 42, 42);
+    background: linear-gradient(0deg, rgba(42, 42, 42, 1) 70%, rgba(255, 255, 255, 0) 100%);
+    height: 400px;
+    margin-top: -400px;
+    z-index: 1000;
+    position: relative;
+}
+
+.horizontal-scroll {
+    width: 100vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 200px 0 100px 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.horizontal-scroll div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.horizontal-scroll div img {
+    width: 200%;
+    position: relative;
+    z-index: 2000;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.horizontal-scroll div p {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    z-index: 2500;
+}
+
+.horizontal-scroll div p:nth-child(2) {
+    margin-left: 125%;
+    text-align: left;
+}
+
+.horizontal-scroll+p {
+    margin-top: 400px;
+}
+
+#house {
+    width: 50%;
+    margin: auto;
+    margin-top: 200px;
+}
+
+#house .fix,
+#door .fix {
+    background: linear-gradient(0deg, rgba(42, 42, 42, 1) 30%, rgba(255, 255, 255, 0) 100%);
+}
+
+#door {
+    margin-top: 200px;
+}
+
+#door div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    margin: auto;
+}
+
+#door div img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: auto;
+    position: relative;
+}
+
+#door div img:nth-child(1) {
+    width: 70%;
+    z-index: 3;
+}
+
+#door div img:nth-child(2) {
+    width: 20%;
+    z-index: 2;
+    margin-bottom: 625px;
+}
+
+#door div img:nth-child(3) {
+    width: 8%;
+    margin-bottom: 650px;
+    z-index: 1;
+}
+
+#door + p {
+    margin-top: 400px;
+}
+
+#prison {
+    display: grid;
+    grid-template-columns: 1/2;
+    grid-template-rows: 1/2;
+    margin-top: 200px;
+}
+
+#prison img {
+    position: relative;
+}
+
+#prison div, #prison div + img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#prison div img{
+    z-index: 2;
+}
+
+#prison div + img{
+    width: 8%;
+    margin: auto;
+    z-index: 1;
 }

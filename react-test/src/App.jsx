@@ -1,16 +1,16 @@
 import './App.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from './pages/Layout';
-import AboutUs from './pages/AboutUs';
-import Sprookjes from './pages/Sprookjes';
-import MakingOf from './pages/MakingOf';
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Layout from './pages/Layout';
+// import AboutUs from './pages/AboutUs';
+// import Sprookjes from './pages/Sprookjes';
+// import MakingOf from './pages/MakingOf';
 import HansGrietje from './pages/sprookjes/HansGrietje';
 
 function App() {
   return (
     <>
-    {/* <HansGrietje /> */}
-        <BrowserRouter basename="/">
+    <HansGrietje />
+        {/* <BrowserRouter basename="/">
           <Routes>
             <Route path='/' element={<Layout />}>
               <Route index element={<AboutUs />} />
@@ -19,7 +19,7 @@ function App() {
               <Route path='HansGrietje' element={<HansGrietje />} />
             </Route>
           </Routes>
-        </BrowserRouter>
+        </BrowserRouter> */}
     </>
   )
 }
