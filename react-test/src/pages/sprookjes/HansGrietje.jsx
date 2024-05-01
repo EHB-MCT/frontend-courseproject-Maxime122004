@@ -1,7 +1,7 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function HansGrietje() {
-    hideOverflow();
+    // hideOverflow();
     return (
         <>
             <div id="hansGrietje">
@@ -91,8 +91,8 @@ function HansGrietje() {
     );
 }
 
-function hideOverflow() {
-    document.querySelector('body').style.overflow = 'hidden';
-}
+// function hideOverflow() {
+//     document.querySelector('body').style.overflow = 'hidden';
+// }
 
 export default HansGrietje;

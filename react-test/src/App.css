@@ -319,6 +319,56 @@ section#makingOf article:nth-child(3) div {
     margin-top: 20px;
 }
 
+/* Navigatie sprookjes */
+#sprookjesNav {
+    display: block;
+}
+
+#sprookjesNav ul {
+    grid-template-columns: repeat(4, 1fr);
+    width: 95%;
+    margin: auto;
+    align-items: center;
+}
+
+#sprookjesNav ul li h3 {
+    font-family: Merriweather;
+    font-size: 20px;
+    text-align: center;
+}
+
+#sprookjesNav ul li h3 span {
+    font-family: Merriweather-Bold;
+    text-transform: uppercase;
+}
+
+#sprookjesNav ul li:nth-child(1) a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 50%;
+}
+
+#sprookjesNav ul li a img:nth-child(1){
+    transform: rotate(180deg);
+    width: 50%;
+}
+
+#sprookjesNav ul li a img:nth-child(2){
+    width: 100%;
+}
+
+#sprookjesNav ul li:nth-child(4) {
+    justify-self: center;
+}
+
+#sprookjesNav ul li:nth-child(4) a {
+    color: #161616;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
 /* Hans en grietje */
 @font-face {
     font-family: Oswald-Medium;

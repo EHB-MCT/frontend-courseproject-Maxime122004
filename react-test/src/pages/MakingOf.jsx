@@ -6,8 +6,8 @@ function MakingOf() {
                 <section id="makingOf">
                     <article>
                         <img src="images/portaal_pagina/sprookje_banner_template.png" alt="" />
-                        <h2>Rapunzel</h2>
-                        <h3>By <span>Hasan Taha</span></h3>
+                        <h2>Hans & Grietje</h2>
+                        <h3>By <span>Bastien Maxime</span></h3>
                     </article>
                     <article>
                         <img src="images/portaal_pagina/sprookjes_template_image.png" />
