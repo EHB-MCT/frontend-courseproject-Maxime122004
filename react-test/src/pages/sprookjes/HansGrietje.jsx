@@ -1,7 +1,6 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function HansGrietje() {
-    // hideOverflow();
     return (
         <>
             <div id="hansGrietje">
@@ -75,24 +74,17 @@ function HansGrietje() {
                     </div>
 
                     <p>De weg naar huis, een pad van verlichting,<br />thuis aangekomen, geen stiefmoeder in hun bestaan.</p>
-
-                    <section id="end-horizontal-scroll">
-                        {/* <div> */}
+                        <section id="end-horizontal-scroll">
                             <h2>The End.</h2>
                             <div>
                                 <p>Met vader verenigd, een gelukkig slot,<br /><span className="hans">Hans</span> en <span className="grietje">Grietje</span>, een sprookje dat blijft, zo zot.</p>
                                 <img src="images/sprookje/path_to_house_on_fire.png" />
                             </div>
-                        {/* </div> */}
-                    </section>
+                        </section>
                 </Parallax>
             </div >
         </>
     );
 }
-
-// function hideOverflow() {
-//     document.querySelector('body').style.overflow = 'hidden';
-// }
 
 export default HansGrietje;
