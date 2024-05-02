@@ -1,6 +1,69 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { useInView, animated } from '@react-spring/web';
 
 function HansGrietje() {
+    const [refSlideIn, slideIn] = useInView(
+        () => ({
+            from: {
+                transform: "translateX(-10%)",
+                opacity: 0,
+            },
+            to: {
+                transform: "translateX(0)",
+                opacity: 1,
+            },
+            config: {
+                tension: 150,
+                friction: 80,
+            },
+        }),
+        {
+            rootMargin: "0% 0%",
+            once: true,
+        }
+    );
+
+    const [refSlideDown, slideDown] = useInView(
+        () => ({
+            from: {
+                transform: "translateY(-10%)",
+                opacity: 0,
+            },
+            to: {
+                transform: "translateY(0)",
+                opacity: 1,
+            },
+            config: {
+                tension: 150,
+                friction: 80,
+            },
+        }),
+        {
+            rootMargin: "0% 0%",
+            once: true,
+        }
+    );
+
+    const [refSlideRight, slideRight] = useInView(
+        () => ({
+            from: {
+                transform: "translateX(10%)",
+                opacity: 0,
+            },
+            to: {
+                transform: "translateX(0)",
+                opacity: 1,
+            },
+            config: {
+                tension: 150,
+                friction: 80,
+            },
+        }),
+        {
+            rootMargin: "0% 0%",
+            once: true,
+        }
+    );
     return (
         <>
             <div id="hansGrietje">
@@ -36,14 +99,14 @@ function HansGrietje() {
 
                     <section className="horizontal-scroll">
                         <div>
-                            <p>In een dorp ver hier vandaan,<br /><span className="hans">Hans</span> en <span className="grietje">Grietje</span>, arm ontdaan.</p>
-                            <p>Ouders laten hen in &apos;t bos achter,<br /> met stenen en broodkruimels,<br />een zoektocht vol klater.</p>
+                            <animated.p ref={refSlideIn} style={slideIn} >In een dorp ver hier vandaan,<br /><span className="hans">Hans</span> en <span className="grietje">Grietje</span>, arm ontdaan.</animated.p>
+                            <animated.p ref={refSlideDown} style={slideDown}>Ouders laten hen in &apos;t bos achter,<br /> met stenen en broodkruimels,<br />een zoektocht vol klater.</animated.p>
                             <img src="images/sprookje/path_to_house.png" />
                         </div>
                     </section>
 
-                    <p>Verdwaald in &apos;t bos, een snoephuis ontdekt,<br />
-                        maar de <span className="heks">heks</span> binnenin, kwaadaardig onbeperkt. </p>
+                    <animated.p ref={refSlideDown} style={slideDown}>Verdwaald in &apos;t bos, een snoephuis ontdekt,<br />
+                        maar de <span className="heks">heks</span> binnenin, kwaadaardig onbeperkt. </animated.p>
 
                     <section id="house">
                         <img src="images/sprookje/house.png" alt="peperkoekenhuisje" />
@@ -53,13 +116,13 @@ function HansGrietje() {
                     <section id="door">
                         <div>
                             <img src="images/sprookje/door.png" alt="door" />
-                            <img src="images/sprookje/eyegap.png" alt="eyegap" />
+                            <animated.img ref={refSlideIn} style={slideIn} src="images/sprookje/eyegap.png" alt="eyegap" />
                             <img src="images/sprookje/eyes.png" alt="eyes" />
                         </div>
                         <div className="fix"></div>
                     </section>
 
-                    <p>Slimme kinderen, ontsnappen aan haar greep,<br />voor dat <span className="heks">de boze heks</span>, hun opeet.</p>
+                    <animated.p ref={refSlideDown} style={slideDown}>Slimme kinderen, ontsnappen aan haar greep,<br />voor dat <span className="heks">de boze heks</span>, hun opeet.</animated.p>
 
                     <section id="prison">
                         <div>
@@ -73,11 +136,11 @@ function HansGrietje() {
                         <div className="fix"></div>
                     </div>
 
-                    <p>De weg naar huis, een pad van verlichting,<br />thuis aangekomen, geen stiefmoeder in hun bestaan.</p>
+                    <animated.p ref={refSlideDown} style={slideDown}>De weg naar huis, een pad van verlichting,<br />thuis aangekomen, geen stiefmoeder in hun bestaan.</animated.p>
                         <section id="end-horizontal-scroll">
                             <h2>The End.</h2>
                             <div>
-                                <p>Met vader verenigd, een gelukkig slot,<br /><span className="hans">Hans</span> en <span className="grietje">Grietje</span>, een sprookje dat blijft, zo zot.</p>
+                                <animated.p ref={refSlideRight} style={slideRight}p>Met vader verenigd, een gelukkig slot,<br /><span className="hans">Hans</span> en <span className="grietje">Grietje</span>, een sprookje dat blijft, zo zot.</animated.p>
                                 <img src="images/sprookje/path_to_house_on_fire.png" />
                             </div>
                         </section>
@@ -86,5 +149,4 @@ function HansGrietje() {
         </>
     );
 }
-
 export default HansGrietje;
