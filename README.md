@@ -1,4 +1,4 @@
-# React - Name project
+# React - Front End Course Project
 
 This is a starting repository for your React application.
 
@@ -15,4 +15,5 @@ This is a starting repository for your React application.
 
 ## Documentation
 
-Make sure to use this file to document everything properly.
+I tried to implement this tutorial without success for the horizontal scroll:
+[Horizontal Scrolling Animation with React and Framer Motion](https://youtu.be/4ehYkfh7P-I?si=gC93iBskAK0iDtxA)
