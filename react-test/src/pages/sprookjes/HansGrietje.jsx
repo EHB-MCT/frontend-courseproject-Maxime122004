@@ -1,15 +1,47 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import Tekst1 from "./Animations_components/AnimateTekstLeft1";
-import Tekst2 from "./Animations_components/AnimateTekstLeft2";
+import { useEffect } from "react";
 import Tekst3 from "./Animations_components/AnimateTekstDown1";
 import Tekst4 from "./Animations_components/AnimateTekstDown2";
 import Tekst5 from "./Animations_components/AnimateTekstDown3";
 import Tekst6 from "./Animations_components/AnimateTekstRight1";
 import Image from "./Animations_components/AnimateImageLeft";
+import HorizontalScroll from "./Components/HorizontalScroll";
 
 function HansGrietje() {
 
-    mousePos();
+    useEffect(() => {
+
+        let houseImages = document.getElementsByClassName("bite");
+        console.log(houseImages);
+        let houseBite = 0;
+        console.log("houseBite:" + houseBite);
+        const handleClick = () => {
+
+            if (houseBite < 5) {
+                const image = houseImages[houseBite];
+                image.style.display = "none";
+                console.log(image);
+                houseBite++;
+                console.log("houseBite:" + houseBite);
+            } else {
+                document.querySelector("#house").style.cursor = "auto";
+            }
+        };
+
+        setTimeout(() => {
+            const houseElement = document.querySelector("#house");
+            console.log(houseElement);
+            if (houseElement) {
+                houseElement.addEventListener("click", handleClick);
+            }
+            return () => {
+                if (houseElement) {
+                    houseElement.removeEventListener("click", handleClick);
+                }
+            };
+        }, 100);
+
+    }, []);
 
     return (
         <>
@@ -44,18 +76,19 @@ function HansGrietje() {
                         <img src="images/sprookje/house_side.png" />
                     </header>
 
-                    <section className="horizontal-scroll">
-                        <div>
-                            <Tekst1 />
-                            <Tekst2 />
-                            <img src="images/sprookje/path_to_house.png" />
-                        </div>
-                    </section>
+                    <HorizontalScroll />
 
                     <Tekst3 />
 
                     <section id="house">
-                        <img src="images/sprookje/house.png" alt="peperkoekenhuisje" />
+                        <div id="houseBites">
+                            <img src="images/sprookje/house.png" className="bite" alt="peperkoekenhuisje" />
+                            <img src="images/sprookje/house_bite1.png" className="bite" alt="peperkoekenhuisje" />
+                            <img src="images/sprookje/house_bite2.png" className="bite" alt="peperkoekenhuisje" />
+                            <img src="images/sprookje/house_bite3.png" className="bite" alt="peperkoekenhuisje" />
+                            <img src="images/sprookje/house_bite4.png" className="bite" alt="peperkoekenhuisje" />
+                            <img src="images/sprookje/house_bite5.png" className="bite" alt="peperkoekenhuisje" />
+                        </div>
                         <div className="fix"></div>
                     </section>
 
@@ -84,10 +117,10 @@ function HansGrietje() {
 
                     <Tekst5 />
                     <section id="end-horizontal-scroll">
-                        <h2>The End.</h2>
                         <div>
                             <Tekst6 />
                             <img src="images/sprookje/path_to_house_on_fire.png" />
+                            <h2>The End.</h2>
                         </div>
                     </section>
                 </Parallax>
@@ -96,12 +129,6 @@ function HansGrietje() {
     );
 }
 
-function mousePos() {
 
-    window.addEventListener('mouseover', (e) => {
-        let mouseX = e.pageX;
-        let mouseY = e.pageY;
-        console.log(mouseX, mouseY);
-    })
-}
+
 export default HansGrietje;

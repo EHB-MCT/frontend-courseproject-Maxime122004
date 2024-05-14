@@ -18,7 +18,7 @@ function Layout2() {
                         <h3>By <span>Bastien Maxime</span></h3>
                     </li>
                     <li>
-                        <Link to="/MakingOf">
+                        <Link to="/HorizontalScroll">
                             Making of
                         </Link>
                     </li>

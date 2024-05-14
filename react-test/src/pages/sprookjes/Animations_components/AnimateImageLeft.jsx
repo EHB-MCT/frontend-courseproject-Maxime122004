@@ -23,7 +23,7 @@ function Image(){
 
     return(
         <>
-            <animated.img src="images/sprookje/eyegap.png" alt="eyegap" ref={refSlideIn} style={slideIn} />
+            <animated.img id="mydiv" src="images/sprookje/eyegap.png" alt="eyegap" ref={refSlideIn} style={slideIn} />
         </>
     )   
 }

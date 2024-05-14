@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     {/* <HansGrietje /> */}
-        <BrowserRouter basename="/">
+        <BrowserRouter basename="/frontend-courseproject-Maxime122004">
           <Routes>
             <Route path='/' element={<Layout />}>
               <Route index element={<AboutUs />} />
