@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import DATA from '../data.json';
 import Sprookje from "./Components/Sprookje";
+import SearchFilter from './Components/SearchFilter';
 
 function AboutUs() {
 
@@ -24,6 +25,7 @@ function AboutUs() {
     return (
         <main>
             <div>
+                <SearchFilter />
                 <h1>Populair</h1>
                 <section className="sprookjes">
                     {filteredSprookjes.map((item) => (

@@ -1,7 +1,10 @@
+import SearchFilter from './Components/SearchFilter';
+
 function MakingOf() {
     return (
         <main>
             <div>
+                <SearchFilter />
                 <h1>Making of</h1>
                 <section id="makingOf">
                     <article>
