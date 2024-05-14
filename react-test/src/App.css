@@ -38,7 +38,7 @@ nav img {
 }
 
 input {
-    position: absolute;
+    position: fixed;
     top: 30px;
     left: 50vh;
     width: 40%;
@@ -116,11 +116,18 @@ aside {
 aside ul li {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    margin: 75px 20px;
+    margin: 50px 20px;
     width: 65%;
     padding: 10px 30px;
     margin-left: auto;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+aside ul li:hover {
+    background-color: #1d1d1d;
+    transition: 0.2s;
 }
 
 aside ul li.active {

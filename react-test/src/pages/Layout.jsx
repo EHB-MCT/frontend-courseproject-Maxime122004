@@ -20,23 +20,27 @@ function Layout() {
             </nav>
             <aside>
                 <ul>
-                    <li className="active">
+                    <li id="alles" className="active">
+                        <img src="images/portaal_pagina/side-nav_icon0.png" alt="icon" />
+                        <h3>Alle Sprookjes</h3>
+                    </li>
+                    <li id="magie">
                         <img src="images/portaal_pagina/side-nav_icon1.png" alt="icon" />
                         <h3>Magie en betovering</h3>
                     </li>
-                    <li>
+                    <li id="queesten">
                         <img src="images/portaal_pagina/side-nav_icon2.png" alt="icon" />
                         <h3>Queesten en reizen</h3>
                     </li>
-                    <li>
+                    <li id="moraliteit">
                         <img src="images/portaal_pagina/side-nav_icon3.png" alt="icon" />
                         <h3>Moraliteit en lessen</h3>
                     </li>
-                    <li>
+                    <li id="dierenverhalen">
                         <img src="images/portaal_pagina/side-nav_icon4.png" alt="icon" />
                         <h3>Dierenverhalen</h3>
                     </li>
-                    <li>
+                    <li id="trucs">
                         <img src="images/portaal_pagina/side-nav_icon5.png" alt="icon" />
                         <h3>Trucs en slimme helden</h3>
                     </li>
