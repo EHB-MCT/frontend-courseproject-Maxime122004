@@ -10,7 +10,6 @@ import HansGrietje from './pages/sprookjes/HansGrietje';
 function App() {
   return (
     <>
-    {/* <HansGrietje /> */}
         <BrowserRouter basename="/frontend-courseproject-Maxime122004">
           <Routes>
             <Route path='/' element={<Layout />}>

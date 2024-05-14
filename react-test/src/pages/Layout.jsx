@@ -8,7 +8,7 @@ function Layout() {
                 <input type="text" placeholder='Zoek hier naar een topic' />
                 <ul>
                     <li>
-                        <Link to='/'>About us</Link>
+                        <Link to='//'>About us</Link>
                     </li>
                     <li>
                         <Link to='/Sprookjes'>Sprookjes</Link>

@@ -6,7 +6,7 @@ function Layout2() {
             <nav id="sprookjesNav">
                 <ul>
                     <li>
-                        <Link to="/">
+                        <Link to="//">
                             <img src="images/portaal_pagina/arrow.png" alt="arrow" />
                             <img src="images/portaal_pagina/er_was_eens_logo-zonder_slogan.png" alt="Er Was Eens ..." />
                         </Link>
@@ -18,7 +18,7 @@ function Layout2() {
                         <h3>By <span>Bastien Maxime</span></h3>
                     </li>
                     <li>
-                        <Link to="/HorizontalScroll">
+                        <Link to="/MakingOf">
                             Making of
                         </Link>
                     </li>
