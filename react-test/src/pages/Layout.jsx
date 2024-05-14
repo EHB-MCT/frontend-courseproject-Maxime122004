@@ -5,7 +5,7 @@ function Layout() {
         <>
             <nav>
                 <img src="images/portaal_pagina/er_was_eens_logo.png" alt="Er was eens" />
-                <input type="text" placeholder='Zoek hier naar een topic' />
+                <div></div>
                 <ul>
                     <li>
                         <Link to='//'>About us</Link>

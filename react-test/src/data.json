@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "title": "Roodkapje",
+        "image": "images/portaal_pagina/roodkapje_tumbnail.jpg",
+        "student": "Taysir Alshahrour",
+        "genre": "moraliteit en lessen",
+        "url": "https://ehb-mct.github.io/frontend-courseproject-Taysir96/"
+    },
+    {
+        "id": 2,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Stephen Asante",
+        "genre": "",
+        "url": "https://probable-enigma-yrq581q.pages.github.io/"
+    },
+    {
+        "id": 3,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Youssef Auassar",
+        "genre": "",
+        "url": "https://jubilant-guacamole-gqr8ool.pages.github.io/"
+    },
+    {
+        "id": 4,
+        "title": "Hans en Grietje",
+        "image": "images/portaal_pagina/hans_en_grietje_tumbnail.jpg",
+        "student": "Maxime Bastien",
+        "genre": "trucs en slimme helden",
+        "url": "https://ehb-mct.github.io/frontend-courseproject-Maxime122004/HansGrietje"
+    },
+    {
+        "id": 5,
+        "title": "Klein duimpje",
+        "image": "images/portaal_pagina/klein_duimpje_tumbnail.png",
+        "student": "Kobe Berckmans",
+        "genre": "queesten en reizen",
+        "url": "https://github.com/EHB-MCT/frontend-courseproject-KobeBerckmans"
+    },
+    {
+        "id": 6,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Jonathan Bruffaerts",
+        "genre": "",
+        "url": "#"
+    },
+    {
+        "id": 7,
+        "title": "De wolf en de zeven geitjes",
+        "image": "images/portaal_pagina/de_wolf_en_de_zeven_geitjes_tumbnail.jpg",
+        "student": "Mikolaj Buelens",
+        "genre": "moraliteit en lessen",
+        "url": "https://ehb-mct.github.io/frontend-courseproject-mikolajbuelens/"
+    },
+    {
+        "id": 8,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Robbe De Clerck",
+        "genre": "",
+        "url": "https://github.com/EHB-MCT/frontend-courseproject-RobbeDeClerck"
+    },
+    {
+        "id": 9,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Zani Dobruna",
+        "genre": "",
+        "url": "#"
+    },
+    {
+        "id": 10,
+        "title": "Beauty and the Beast",
+        "image": "images/portaal_pagina/beauty_and_the_beast.jpg",
+        "student": "Wail El Majdoubi",
+        "genre": "magie en betovering",
+        "url": "https://scaling-adventure-yrzmqkw.pages.github.io/"
+    },
+    {
+        "id": 11,
+        "title": "De kleine zeemeermin",
+        "image": "images/portaal_pagina/kleine_zeemeermin.jpg",
+        "student": "Nelle Favoreel",
+        "genre": "magie en betovering",
+        "url": "#"
+    },
+    {
+        "id": 12,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Ines Frederickx",
+        "genre": "",
+        "url": "#"
+    },
+    {
+        "id": 13,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Jorbe Geys",
+        "genre": "",
+        "url": "#"
+    },
+    {
+        "id": 14,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Rémy Gistelinck",
+        "genre": "",
+        "url": "https://symmetrical-invention-lnjqp56.pages.github.io/"
+    },
+    {
+        "id": 15,
+        "title": "Raponsje",
+        "image": "images/portaal_pagina/raponsje.png",
+        "student": "Taha Hasan",
+        "genre": "magie en betovering",
+        "url": "https://ehb-mct.github.io/frontend-courseproject-tahahasan7/"
+    },
+    {
+        "id": 16,
+        "title": "The uggly duckling",
+        "image": "images/portaal_pagina/het_lelijke_eendje.jpg",
+        "student": "Thomas Heusdens",
+        "genre": "moraliteit en lessen",
+        "url": "https://friendly-eureka-93rngw4.pages.github.io/"
+    },
+    {
+        "id": 17,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Milan Langhendries",
+        "genre": "",
+        "url": "https://upgraded-train-n84y6yw.pages.github.io/"
+    },
+    {
+        "id": 18,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Naïl L&apos;Maimouni",
+        "genre": "",
+        "url": "#"
+    },
+    {
+        "id": 19,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Joel Lopez Mendez",
+        "genre": "",
+        "url": "https://literate-broccoli-yrqokmg.pages.github.io/"
+    },
+    {
+        "id": 20,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Ernest Marot",
+        "genre": "",
+        "url": "#"
+    },
+    {
+        "id": 21,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Glory Menga",
+        "genre": "",
+        "url": "https://friendly-eureka-374rmg8.pages.github.io/"
+    },
+    {
+        "id": 22,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Naomi Quist",
+        "genre": "",
+        "url": "#"
+    },
+    {
+        "id": 23,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Michaël Stoikos",
+        "genre": "",
+        "url": "https://ehb-mct.github.io/frontend-courseproject-MichaelStoikos"
+    },
+    {
+        "id": 24,
+        "title": "Repelsteeltje",
+        "image": "images/portaal_pagina/repelsteeltje.jpg",
+        "student": "Jochen Sunaert",
+        "genre": "magie en betovering",
+        "url": "https://ehb-mct.github.io/frontend-courseproject-JochenSunaert/repelsteeltje"
+    },
+    {
+        "id": 25,
+        "title": "De Kikker en de Os.",
+        "image": "images/portaal_pagina/de_kikker_en_de_os.jpg",
+        "student": "Yassine Tazi",
+        "genre": "moraliteit en lessen",
+        "url": "https://urban-adventure-z4jmzpk.pages.github.io"
+    },
+    {
+        "id": 26,
+        "title": "De wolf en zeven geiten",
+        "image": "images/portaal_pagina/de_wolf_en_de_zeven_geitjes2.jpg",
+        "student": "Berkay Unutkan",
+        "genre": "moraliteit en lessen",
+        "url": "https://studious-adventure-rr7p15v.pages.github.io"
+    },
+    {
+        "id": 27,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Tuur Van Bergen",
+        "genre": "",
+        "url": "#"
+    },
+    {
+        "id": 28,
+        "title": "De drie biggetjes",
+        "image": "images/portaal_pagina/de_drie_biggetjes.jpg",
+        "student": "Rachelle van Uden",
+        "genre": "dierenverhalen",
+        "url": "https://glowing-guide-p8mq8g9.pages.github.io/"
+    },
+    {
+        "id": 29,
+        "title": "Aladdin",
+        "image": "images/portaal_pagina/aladdin.jpg",
+        "student": "Karsten Verherstraeten",
+        "genre": "magie en betovering",
+        "url": "https://reimagined-chainsaw-22ro7zz.pages.github.io/"
+    },
+    {
+        "id": 30,
+        "title": "lorem ipsum",
+        "image": "images/portaal_pagina/coming_soon.jpg",
+        "student": "Maxim Westerbeek",
+        "genre": "",
+        "url": "#"
+    }
+]

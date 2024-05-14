@@ -5,7 +5,7 @@ import AboutUs from './pages/AboutUs';
 import Sprookjes from './pages/Sprookjes';
 import MakingOf from './pages/MakingOf';
 import Layout2 from './pages/Layout2';
-import HansGrietje from './pages/sprookjes/HansGrietje';
+import HansGrietje from './pages/HansGrietje';
 
 function App() {
   return (

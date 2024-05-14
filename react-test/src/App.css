@@ -37,13 +37,18 @@ nav img {
     margin-left: 50px;
 }
 
-nav input {
+input {
+    position: absolute;
+    top: 20px;
+    left: 50vh;
+    width: 500px;
     background-color: #212121;
     color: #8F8989;
     border: none;
     border-radius: 16px;
     padding: 20px;
     font-family: Merriweather;
+    z-index: 9000000;
 }
 
 nav ul {

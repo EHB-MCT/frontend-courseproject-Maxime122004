@@ -1,5 +1,5 @@
-import Tekst1 from "../Animations_components/AnimateTekstLeft1";
-import Tekst2 from "../Animations_components/AnimateTekstLeft1";
+import Tekst1 from "../Components/Animations_components/AnimateTekstLeft1";
+import Tekst2 from "../Components/Animations_components/AnimateTekstLeft1";
 
 function HorizontalScroll() {
     return (

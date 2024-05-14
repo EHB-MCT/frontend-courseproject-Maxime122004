@@ -1,10 +1,10 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { useEffect } from "react";
-import Tekst3 from "./Animations_components/AnimateTekstDown1";
-import Tekst4 from "./Animations_components/AnimateTekstDown2";
-import Tekst5 from "./Animations_components/AnimateTekstDown3";
-import Tekst6 from "./Animations_components/AnimateTekstRight1";
-import Image from "./Animations_components/AnimateImageLeft";
+import Tekst3 from "./Components/Animations_components/AnimateTekstDown1";
+import Tekst4 from "./Components/Animations_components/AnimateTekstDown2";
+import Tekst5 from "./Components/Animations_components/AnimateTekstDown3";
+import Tekst6 from "./Components/Animations_components/AnimateTekstRight1";
+import Image from "./Components/Animations_components/AnimateImageLeft";
 import HorizontalScroll from "./Components/HorizontalScroll";
 
 function HansGrietje() {
